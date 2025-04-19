@@ -34,13 +34,8 @@
     "vite": "6.2.5",
     "wrangler": "4.7.0"
   },
-  "scripts": {
-    "build": "tsc -b && vite build",
-    "deploy": "npm run build && wrangler deploy",
-    "dev": "vite",
-    "lint": "eslint .",
-    "preview": "npm run build && vite preview",
-    "types": "wrangler types"
-  },
+"scripts": {
+  "deploy": "wrangler deploy --minify"
+}
   "type": "module"
 }
